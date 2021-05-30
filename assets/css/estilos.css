@@ -398,13 +398,13 @@ a {
 }
 
 .partner-wap {
-  background-color: #7276ec;
+  background-color: #a79a9a;
   transition: 1s;
   cursor: pointer;
 }
 
 .partner-wap:hover {
-  background-color: #b1b3f5;
+  background-color: #bfbfbf;
 }
 
 .why-us {

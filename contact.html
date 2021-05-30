@@ -1,65 +1,107 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-  <title>Agencia de Marketing</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="apple-touch-icon" href="assets/img/apple-icon.png">
-    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
-    <!-- Load Require CSS -->
-    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Font CSS -->
-    <link href="assets/css/boxicon.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
-		<!-- carga CSS -->
-    <link rel="stylesheet" href="assets/css/estilos.css">
 
-</head>
-
-<body>
-    <!-- Header -->
-    <nav id="main_nav" class="navbar navbar-expand-lg navbar-light bg-white shadow">
-        <div class="container d-flex justify-content-between align-items-center">
-            <a class="navbar-brand h1" href="index.html">
-                <i class='bx bx-buildings bx-sm text-dark'></i>
-	       <span class="text-dark h4">Marke-</span><span class="text-primary h4">Ting</span></a>
-           
-            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler-success" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="align-self-center collapse navbar-collapse flex-fill  d-lg-flex justify-content-lg-between" id="navbar-toggler-success">
-                <div class="flex-fill mx-xl-5 mb-2">
-                    <ul class="nav navbar-nav d-flex justify-content-between mx-xl-5 text-center text-dark">
-                       <li class="nav-item">
-                            <a class="nav-link btn-outline-primary rounded-pill px-3" href="index.html">Home</a>
-						<!-- px = padding y mx es el margin 
-						rounded-pill =genera ese boton con bordes redondeados rounded-circle-->	
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link btn-outline-primary rounded-pill px-3" href="about.html">Sobre Nosotros</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link btn-outline-primary rounded-pill px-3" href="work.html">Trabajos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link btn-outline-primary rounded-pill px-3" href="pricing.html">Precios</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link btn-outline-primary rounded-pill px-3" href="contact.html">Contáctanos</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="navbar align-self-center d-flex">
-                    <a class="nav-link" href="#"><i class='bx bx-bell bx-sm bx-tada-hover text-primary'></i></a>
-                    <a class="nav-link" href="#"><i class='bx bx-cog bx-sm text-primary'></i></a>
-                    <a class="nav-link" href="#"><i class='bx bx-user-circle bx-sm text-primary'></i></a>
+    <head>
+        <title>Wing Chun Tao</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!----- viewport para apple device-width = ancho pantalla initial-scale es que inicia sin ningún zoom -->
+        <link rel="apple-touch-icon" href="assets/img/apple-icon.png">
+        <link rel="icon" href="./assets/img/favicon.ico" />
+        <!----- icono para apple y safari -->
+        <link rel="shortcut icon" type="image/x-icon" href="./assets/img/12.png">
+        <!-- Load Require CSS -->
+        <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+        <!-- iconos  -->
+        <link href="assets/css/boxicon.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+      />
+        <!-- carga CSS -->
+        <link rel="stylesheet" href="assets/css/estilos.css">
+    </head>
+    
+    
+    <body class="bg-body">
+        <!-- Header 
+            nav = cuyo propósito es proporcionar enlaces de navegación, ya sea dentro del documento actual 
+            o a otros documentos
+            -->
+    
+        <nav id="main_nav" class="navbar navbar-expand-lg bg-custom shadow">
+    
+            <!--navbar-expand-lg = envoltorio para que el navbar se estire en lg
+            navbar-light = texto negro de la letra
+            bg-white = fondo de color blanco
+            -->
+    
+            <div class="container d-flex justify-content-between align-items-center">
+    
+                <a class="navbar-brand h1" href="index.html">
+                    <!--navbar-brand = clase se utiliza para resaltar la marca o logotipo de su página-->
+                    <!-- <i class='bx bx-buildings bx-sm text-dark' ></i> -->
+                    <!--	bx bx-buildings = icono del logo de la web: 
+                        http://www.unisvg.com/icon-sets/bx/bx-buildings.html 
+                        https://boxicons.com/
+                        -->
+                    <span><img src="./assets/img/favicon.ico" width="40" height="40"> <span class="text-light h4">Wing
+                            Chun-</span><span class="text-primary h4">Tao</span></span></a>
+    
+                <!--	boton de hamburguesa -->
+                <button class="navbar-toggler navbar-dark bg-custom border-0" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbar-toggler-success" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon">
+                    </span>
+                </button>
+                <!------------------------------------------- Opciones del Menu		-->
+                <div class="align-self-center collapse navbar-collapse flex-fill  d-lg-flex justify-content-lg-between"
+                    id="navbar-toggler-success">
+    
+                    <!-------collapse navbar-collapse= para agrupar y ocultar el contenido de la barra de navegación 
+                por un punto de interrupción principal.
+                flex-fill = obliga a que todos los elementos tengan el mismo tamaño de ancho
+                d-lg-flex = utilidades para crear un contenedor flexbox y transforme los elementos secundarios 
+                directos en elementos flexibles
+                -->
+                    <div class="flex-fill mx-xl-5 mb-2">
+                        <!--	  mx=para clases que establecen tanto *-lefty*-right-->
+                        <ul class="nav navbar-nav d-flex justify-content-between mx-xl-5 text-center text-light">
+                            <!--   .navbar-nav para una navegación ligera y de altura completa 
+                               (incluida la compatibilidad con menús desplegables).-->
+                            <li class="nav-item">
+                                <a class="nav-link btn-outline-primary rounded-pill px-3" href="index.html">Home</a>
+                                <!-- px = padding y mx es el margin 
+                                rounded-pill =genera ese boton con bordes redondeados rounded-circle-->
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link btn-outline-primary rounded-pill px-3" href="clases.html">Clases</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link btn-outline-primary rounded-pill px-3" href="about.html">Sobre
+                                    Nosotros</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link btn-outline-primary rounded-pill px-3" href="planes.html">Afiliación</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link btn-outline-primary rounded-pill px-3" href="contact.html">Contacto</a>
+                            </li>
+                        </ul>
+                    </div>
+    
+    <!-------------------------Fin de las opciones del menu
+    ------------------------------------ Inicio de los iconos del menu-->
+                    <div class="navbar align-self-center d-flex">
+                        <a class="nav-link" href="#"><i class='bx bx-bell bx-sm bx-tada-hover text-primary'></i></a>
+                        <a class="nav-link" href="#"><i class='bx bx-cog bx-spin-hover bx-sm text-primary'></i></a>
+                        <a class="nav-link" href="#"><i class='bx bx-user-circle  bx-sm text-primary'></i></a>
+                        <!--	https://iconify.design/icon-sets/bx/-->
+                    </div>
                 </div>
             </div>
-        </div>
-    </nav>
-    <!-- Close Header -->
+        </nav>
+        <!-- Close Header -->
 
 
     <!-- Start Banner Hero -->
@@ -200,142 +242,148 @@
     <!-- End Contact -->
 
 
-     <!-- Start Footer -->
-    <footer class="bg-secondary pt-4">
+ <!-- Start Footer -->
+ <footer class="bg-secondary pt-4">
+    <div class="container">
+        <div class="row py-4">
+
+            <div class="col-lg-3 col-12 align-left">
+                <a class="navbar-brand" href="index.html">
+                    <i><img src="./assets/img/favicon.ico" width="40" height="40"> </i>
+                    <span class="text-light h5">Wing Chun </span><span
+                        class="text-light h5 semi-bold-600">Tao</span>
+                </a>
+                <p class="text-light my-lg-4 my-2">
+                    Entrenamos de manera <b>integral</b>. Desde la filosofía al acondicionamiento físico. 
+                    <br>Respetando las creencias y necesidades de los practicantes, nuestra <b>familia</b>.
+                </p>
+                <ul class="list-inline footer-icons light-300">
+                    <li class="list-inline-item m-0">
+                        <a class="text-light" target="_blank" href="https://www.facebook.com/Sdsmicrocentro">
+                            <i class='bx bxl-facebook-circle bx-md'></i>
+                        </a>
+                    </li>
+                    <li class="list-inline-item m-0">
+                        <a class="text-light" target="_blank" href="https://www.instagram.com/wingchungargentina/">
+                            <i class='bx bxl-instagram bx-md'></i>
+
+                        </a>
+                    </li>
+                    <li class="list-inline-item m-0">
+                        <a class="text-light" target="_blank" href="https://www.reddit.com/r/WingChun/">
+                            <i class='bx bxl-reddit bx-md'></i>
+                        </a>
+                    </li>
+                    <li class="list-inline-item m-0">
+                        <a class="text-light" target="_blank" href="https://www.youtube.com/user/leandrocrivellari">
+                            <i class='bx bxl-youtube bx-md'></i>
+                        </a>
+                    </li>
+                    <li class="list-inline-item m-0">
+                        <a class="text-light" target="_blank" href="https://medium.com/tag/wing-chun/latest">
+                            <i class='bx bxl-medium bx-md'></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col-lg-3 col-md-4 my-sm-0 mt-4">
+                <h3 class="h4 pb-lg-3 text-light light-300">Win Chun Tao</h2>
+                    <ul class="list-unstyled text-light light-300">
+                        <li class="pb-2">
+                            <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a
+                                class="text-decoration-none text-light" href="index.html">Home</a>
+                        </li>
+                        <li class="pb-2">
+                            <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a
+                                class="text-decoration-none text-light py-1" href="about.html">Sobre Nosotros</a>
+                        </li>
+                        <li class="pb-2">
+                            <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a
+                                class="text-decoration-none text-light py-1" href="clases.html">Clases</a>
+                        </li>
+                        <li class="pb-2">
+                            <i class='bx-fw bx bxs-chevron-right bx-xs'></i></i><a
+                            class="text-decoration-none text-light py-1" href="planes.html">Afiliación</a>
+                        </li>
+                        <li class="pb-2">
+                            <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a
+                                class="text-decoration-none text-light py-1" href="contact.html">Contacto</a>
+                        </li>
+                    </ul>
+            </div>
+
+            <div class="col-lg-3 col-md-4 my-sm-0 mt-4">
+                <h2 class="h4 pb-lg-3 text-light light-300">Clases</h2>
+                <ul class="list-unstyled text-light light-300">
+                    <li class="pb-2">
+                        <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a
+                            class="text-decoration-none text-light py-1" href="#">Formas</a>
+                    </li>
+                    <li class="pb-2">
+                        <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a
+                            class="text-decoration-none text-light py-1" href="#">Defensa Personal</a>
+                    </li>
+                    <li class="pb-2">
+                        <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a
+                            class="text-decoration-none text-light py-1" href="#">Armas</a>
+                    </li>
+                    <li class="pb-2">
+                        <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a
+                            class="text-decoration-none text-light py-1" href="#">Filosofía</a>
+                    </li>
+                    <li class="pb-2">
+                        <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a
+                            class="text-decoration-none text-light py-1" href="#">Seguridad</a>
+                    </li>
+            </div>
+
+            <div class="col-lg-3 col-md-4 my-sm-0 mt-4">
+                <h2 class="h4 pb-lg-3 text-light light-300">Atendemos en:</h2>
+                <ul class="list-unstyled text-light light-300">
+                    <li class="pb-2">
+                        <i class='bx-fw bx bx-phone bx-xs'></i>
+                        <a class="text-decoration-none text-light py-1"
+                            href="tel:010-020-0340">011-2020-0009</a>
+                    </li>
+                    <li class="pb-2">
+                        <i class='bx bxl-whatsapp bx-xs text-light'></i>
+                        <a class="text-decoration-none text-light py-1"
+                            href="https://www.whatsapp.com/">54 911 56984733</a>
+                        </a>
+                        
+                    </li>
+                    <li class="pb-2">
+                        <i class='bx-fw bx bx-mail-send bx-xs'></i><a class="text-decoration-none text-light py-1"
+                            href="mailto:info@company.com">info@winchuntao.com</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="w-100 bg-custom py-3">
         <div class="container">
-            <div class="row py-4">
-
-                <div class="col-lg-3 col-12 align-left">
-                    <a class="navbar-brand" href="index.html">
-                        <i class='bx bx-buildings bx-sm text-light'></i>
-                        <span class="text-light h5">Marke-</span><span class="text-light h5 semi-bold-600">Ting</span>
-                    </a>
-                    <p class="text-light my-lg-4 my-2">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                        sed do eiusmod tempor incididunt ut.
+            <div class="row pt-2">
+                <div class="col-lg-6 col-sm-12">
+                    <p class="text-lg-start text-center text-light light-300">
+                        © Wing Chun Tao - Todos los derechos reservados.
                     </p>
-                    <ul class="list-inline footer-icons light-300">
-                        <li class="list-inline-item m-0">
-                            <a class="text-light" target="_blank" href="http://facebook.com/">
-                                <i class='bx bxl-facebook-square bx-md'></i>
-                            </a>
-                        </li>
-                        <li class="list-inline-item m-0">
-                            <a class="text-light" target="_blank" href="https://www.linkedin.com/">
-                                <i class='bx bxl-linkedin-square bx-md'></i>
-                            </a>
-                        </li>
-                        <li class="list-inline-item m-0">
-                            <a class="text-light" target="_blank" href="https://www.whatsapp.com/">
-                                <i class='bx bxl-whatsapp-square bx-md'></i>
-                            </a>
-                        </li>
-                        <li class="list-inline-item m-0">
-                            <a class="text-light" target="_blank" href="https://www.flickr.com/">
-                                <i class='bx bxl-flickr-square bx-md'></i>
-                            </a>
-                        </li>
-                        <li class="list-inline-item m-0">
-                            <a class="text-light" target="_blank" href="https://www.medium.com/">
-                                <i class='bx bxl-medium-square bx-md' ></i>
-                            </a>
-                        </li>
-                    </ul>
                 </div>
-
-                <div class="col-lg-3 col-md-4 my-sm-0 mt-4">
-                    <h3 class="h4 pb-lg-3 text-light light-300">Nuestro Estudio</h2>
-                        <ul class="list-unstyled text-light light-300">
-                            <li class="pb-2">
-                                <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light" 
-								href="index.html">Home</a>
-                            </li>
-                            <li class="pb-2">
-                                <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light py-1" 
-								href="about.html">Nosotros</a>
-                            </li>
-                            <li class="pb-2">
-                                <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light py-1" 
-								href="work.html">Trabajos</a>
-                            </li>
-                            <li class="pb-2">
-                                <i class='bx-fw bx bxs-chevron-right bx-xs'></i></i><a class="text-decoration-none text-light py-1" 
-								href="pricing.html">Precios</a>
-                            </li>
-                            <li class="pb-2">
-                                <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light py-1" 
-								href="contact.html">Contáctanos</a>
-                            </li>
-                        </ul>
-                </div>
-
-                <div class="col-lg-3 col-md-4 my-sm-0 mt-4">
-                    <h2 class="h4 pb-lg-3 text-light light-300">Trabajos</h2>
-                    <ul class="list-unstyled text-light light-300">
-                        <li class="pb-2">
-                            <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light py-1" 
-							href="#">Marcas</a>
-                        </li>
-                        <li class="pb-2">
-                            <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light py-1" 
-							href="#">Negocios</a>
-                        </li>
-                        <li class="pb-2">
-                            <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light py-1" 
-							href="#">Marketing</a>
-                        </li>
-                        <li class="pb-2">
-                            <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light py-1" 
-							href="#">Redes Sociales</a>
-                        </li>
-                        <li class="pb-2">
-                            <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light py-1" 
-							href="#">Soluciones Digitales</a>
-                        </li>
-                        <li class="pb-2">
-                            <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light py-1" 
-							href="#">Gráfica</a>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="col-lg-3 col-md-4 my-sm-0 mt-4">
-                    <h2 class="h4 pb-lg-3 text-light light-300">Atendemos en:</h2>
-                    <ul class="list-unstyled text-light light-300">
-                        <li class="pb-2">
-                            <i class='bx-fw bx bx-phone bx-xs'></i><a class="text-decoration-none text-light py-1" 
-							href="tel:010-020-0340">021-2354-4568</a>
-                        </li>
-                        <li class="pb-2">
-                            <i class='bx-fw bx bx-mail-send bx-xs'></i><a class="text-decoration-none text-light py-1"
-							href="mailto:info@company.com">info@company.com</a>
-                        </li>
-                    </ul>
-                </div>
-
-            </div>
-        </div>
-
-        <div class="w-100 bg-primary py-3">
-            <div class="container">
-                <div class="row pt-2">
-                    <div class="col-lg-6 col-sm-12">
-                        <p class="text-lg-start text-center text-light light-300">
-                            © Copyright 2021 Marke-Ting. Todos los derechos reservados.
-                        </p>
-                    </div>
-                    <div class="col-lg-6 col-sm-12">
-                        <p class="text-lg-end text-center text-light light-300">
-                            Diseñado por <a rel="sponsored" class="text-decoration-none text-light" 
-							href="https://cursophp.com.ar/" target="_blank"><strong>CAC FullStack</strong></a>
-                        </p>
-                    </div>
+                <div class="col-lg-6 col-sm-12">
+                    <p class="text-lg-end text-center text-light light-300">
+                        Diseñado por <a rel="sponsored" class="text-decoration-none text-light"
+                            href="https://cursophp.com.ar/" target="_blank"><strong>E.C. - CAC 2021
+                                #2014</strong></a>
+                    </p>
                 </div>
             </div>
         </div>
+    </div>
 
-    </footer>
-    <!-- End Footer -->
+</footer>
+<!-- End Footer -->
 
 
 
