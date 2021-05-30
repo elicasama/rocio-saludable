@@ -60,9 +60,33 @@ a {
 .bg-body {
   background: #3c150466 !important;
 }
+
 .bg-card {
   background: #d1c3c3b7;
 }
+
+.bg-light {
+  background-color: #f8f4ee !important;
+}
+
+.bg-plan-primary {
+  background: rgb(230,230,230);
+  background: radial-gradient(circle, rgba(230,230,230,1) 0%, rgba(225,225,224,1) 6%, rgba(211,210,207,0.9531162806919643) 21%, rgba(159,150,142,1) 89%, rgba(150,140,131,1) 100%);
+}
+
+.bg-plan-secondary {
+  background: rgb(197, 168, 128);
+  background: radial-gradient(circle, 
+   rgba(197, 168, 128, 0.8998949921765581) 3%,
+   rgba(197, 168, 128, 0.8998949921765581) 13%, 
+   rgba(172, 146, 112, 1) 23%, 
+   rgba(117, 100, 78, 1) 63%, 
+   rgba(85, 74, 59, 1) 78%,
+   rgba(27, 25, 22, 1) 97%,
+   rgba(15, 15, 15, 1) 100%);
+}
+
+
 .text-light {
   color: #e6e6e6;
 }
@@ -122,29 +146,37 @@ a {
 
 
 /* line 91, src/assets/scss/mixins/_buttons.scss */
-.btn-check:focus + .btn-outline-secondary, .btn-outline-secondary:focus {
+.btn-check:focus+.btn-outline-secondary,
+.btn-outline-secondary:focus {
   -webkit-box-shadow: 0 0 0 0.25rem rgba(58, 57, 57, 0.5);
-          box-shadow: 0 0 0 0.25rem rgba(58, 57, 57, 0.5);
-          
+  box-shadow: 0 0 0 0.25rem rgba(58, 57, 57, 0.5);
+
 }
 
 /* line 96, src/assets/scss/mixins/_buttons.scss */
-.btn-check:checked + .btn-outline-secondary,
-.btn-check:active + .btn-outline-secondary, .btn-outline-secondary:active, .btn-outline-secondary.active, .btn-outline-secondary.dropdown-toggle.show {
-  color:#0f0f0f;
+.btn-check:checked+.btn-outline-secondary,
+.btn-check:active+.btn-outline-secondary,
+.btn-outline-secondary:active,
+.btn-outline-secondary.active,
+.btn-outline-secondary.dropdown-toggle.show {
+  color: #0f0f0f;
   background-color: #5e5c5c;
 }
 
 /* line 105, src/assets/scss/mixins/_buttons.scss */
-.btn-check:checked + .btn-outline-secondary:focus,
-.btn-check:active + .btn-outline-secondary:focus, .btn-outline-secondary:active:focus, .btn-outline-secondary.active:focus, .btn-outline-secondary.dropdown-toggle.show:focus {
+.btn-check:checked+.btn-outline-secondary:focus,
+.btn-check:active+.btn-outline-secondary:focus,
+.btn-outline-secondary:active:focus,
+.btn-outline-secondary.active:focus,
+.btn-outline-secondary.dropdown-toggle.show:focus {
   -webkit-box-shadow: 0 0 0 0.25rem rgba(58, 57, 57, 0.5);
-          box-shadow: 0 0 0 0.25rem rgba(58, 57, 57, 0.5);
-          color:#0f0f0f;
+  box-shadow: 0 0 0 0.25rem rgba(58, 57, 57, 0.5);
+  color: #0f0f0f;
 }
 
 /* line 115, src/assets/scss/mixins/_buttons.scss */
-.btn-outline-secondary:disabled, .btn-outline-secondary.disabled {
+.btn-outline-secondary:disabled,
+.btn-outline-secondary.disabled {
   color: #0f0f0f;
   background-color: transparent;
 }
@@ -194,7 +226,7 @@ a {
 }
 
 
-.btn-outline-secondary{
+.btn-outline-secondary {
   color: #0f0f0f;
   border-color: #d1caca !important;
 
@@ -205,9 +237,6 @@ a {
   background-color: #5e5c5c;
   border-color: #5e5c5c !important;
 }
-
-
-
 
 /* line 59, src/assets/scss/_buttons.scss */
 .btn-secondary {
@@ -224,7 +253,8 @@ a {
 }
 
 /* line 31, src/assets/scss/mixins/_buttons.scss */
-.btn-check:focus + .btn-secondary, .btn-secondary:focus {
+.btn-check:focus+.btn-secondary,
+.btn-secondary:focus {
   color: #000;
   background-color: #5e5c5c;
   border-color: #5e5c5c !important;
@@ -233,50 +263,33 @@ a {
 }
 
 /* line 44, src/assets/scss/mixins/_buttons.scss */
-.btn-check:checked + .btn-secondary,
-.btn-check:active + .btn-secondary, .btn-secondary:active, .btn-secondary.active,
-.show > .btn-secondary.dropdown-toggle {
+.btn-check:checked+.btn-secondary,
+.btn-check:active+.btn-secondary,
+.btn-secondary:active,
+.btn-secondary.active,
+.show>.btn-secondary.dropdown-toggle {
   color: #000;
   background-color: #5e5c5c;
   border-color: #5e5c5c !important;
 }
 
 /* line 55, src/assets/scss/mixins/_buttons.scss */
-.btn-check:checked + .btn-secondary:focus,
-.btn-check:active + .btn-secondary:focus, .btn-secondary:active:focus, .btn-secondary.active:focus,
-.show > .btn-secondary.dropdown-toggle:focus {
+.btn-check:checked+.btn-secondary:focus,
+.btn-check:active+.btn-secondary:focus,
+.btn-secondary:active:focus,
+.btn-secondary.active:focus,
+.show>.btn-secondary.dropdown-toggle:focus {
   -webkit-box-shadow: 0 0 0 0.25rem rgba(15, 15, 15, .5);
   box-shadow: 0 0 0 0.25rem rgba(15, 15, 15, .5);
 }
 
 /* line 65, src/assets/scss/mixins/_buttons.scss */
-.btn-secondary:disabled, .btn-secondary.disabled {
+.btn-secondary:disabled,
+.btn-secondary.disabled {
   color: #000;
   background-color: #5e5c5c;
   border-color: #5e5c5c !important;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /* Main Nav */
@@ -401,6 +414,12 @@ a {
   background-color: #a79a9a;
   transition: 1s;
   cursor: pointer;
+  /* width: 20rem;*/
+  /* height: 20rem;  */
+  /* padding: auto; */
+  /* margin-top: unset; */
+  /* display: flex; */
+  /* justify-content: center; */
 }
 
 .partner-wap:hover {
@@ -414,6 +433,17 @@ a {
   background: linear-gradient(0deg, rgba(239, 239, 253, 1) 50%, rgba(255, 255, 255, 1) 50%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#efeffd", endColorstr="#ffffff", GradientType=1);
 }
+
+/* line 34, src/assets/scss/forms/_form-control.scss */
+.form-control:focus {
+  color: #212529;
+  background-color: #fff;
+  border-color: #5e5c5c;
+  outline: 0;
+  -webkit-box-shadow: 0 0 0 0.25rem rgba(15, 15, 15, 0.25);
+  box-shadow: 0 0 0 0.25rem rgba(15, 15, 15, 0.25);
+}
+
 
 .team-member-img {
   transition-duration: 0.15s;
@@ -456,6 +486,12 @@ a {
 /* Contact */
 #floatingtextarea {
   height: 150px
+}
+
+.contact-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* Footer */
