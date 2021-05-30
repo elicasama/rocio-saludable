@@ -2,82 +2,132 @@
 <html lang="en">
 
 <head>
-  <title>Agencia de Marketing</title>
+    <title>Wing Chun Tao</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="apple-touch-icon" href="assets/img/apple-icon.png">
-    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
+    <!----- viewport para apple device-width = ancho pantalla initial-scale es que inicia sin ningún zoom -->
+    <link rel="icon" href="./assets/img/favicon.ico" />
+    <!----- icono para apple y safari -->
+    <link rel="shortcut icon" type="image/x-icon" href="./assets/img/12.png">
     <!-- Load Require CSS -->
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Font CSS -->
+    <!-- iconos  -->
     <link href="assets/css/boxicon.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
-		<!-- carga CSS -->
+
+    <!-- carga CSS -->
     <link rel="stylesheet" href="assets/css/estilos.css">
 </head>
 
-<body>
-    <!-- Header -->
-    <nav id="main_nav" class="navbar navbar-expand-lg navbar-light bg-white shadow">
-        <div class="container d-flex justify-content-between align-items-center">
-            <a class="navbar-brand h1" href="index.html">
-                <i class='bx bx-buildings bx-sm text-dark'></i>
-	       <span class="text-dark h4">Marke-</span><span class="text-primary h4">Ting</span></a>
-            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler-success" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
 
-            <div class="align-self-center collapse navbar-collapse flex-fill  d-lg-flex justify-content-lg-between" id="navbar-toggler-success">
+
+
+
+<body class="bg-body">
+    <!-- Header 
+	nav = cuyo propósito es proporcionar enlaces de navegación, ya sea dentro del documento actual 
+	o a otros documentos
+	-->
+
+    <nav id="main_nav" class="navbar navbar-expand-lg bg-custom shadow">
+
+        <!--navbar-expand-lg = envoltorio para que el navbar se estire en lg
+	navbar-light = texto negro de la letra
+	bg-white = fondo de color blanco
+	-->
+
+        <div class="container d-flex justify-content-between align-items-center">
+
+            <a class="navbar-brand h1" href="index.html">
+                <!--navbar-brand = clase se utiliza para resaltar la marca o logotipo de su página-->
+                <!-- <i class='bx bx-buildings bx-sm text-dark' ></i> -->
+                <!--	bx bx-buildings = icono del logo de la web: 
+				http://www.unisvg.com/icon-sets/bx/bx-buildings.html 
+				https://boxicons.com/
+				-->
+                <span><img src="./assets/img/favicon.ico" width="40" height="40"> <span class="text-light h4">Wing
+                        Chun-</span><span class="text-primary h4">Tao</span></span></a>
+
+            <!--	boton de hamburguesa -->
+            <button class="navbar-toggler navbar-dark bg-custom border-0" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbar-toggler-success" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon">
+                </span>
+            </button>
+            <!------------------------------------------- Opciones del Menu		-->
+            <div class="align-self-center collapse navbar-collapse flex-fill  d-lg-flex justify-content-lg-between"
+                id="navbar-toggler-success">
+
+                <!-------collapse navbar-collapse= para agrupar y ocultar el contenido de la barra de navegación 
+		por un punto de interrupción principal.
+		flex-fill = obliga a que todos los elementos tengan el mismo tamaño de ancho
+		d-lg-flex = utilidades para crear un contenedor flexbox y transforme los elementos secundarios 
+		directos en elementos flexibles
+		-->
                 <div class="flex-fill mx-xl-5 mb-2">
-                    <ul class="nav navbar-nav d-flex justify-content-between mx-xl-5 text-center text-dark">
-                       <li class="nav-item">
+                    <!--	  mx=para clases que establecen tanto *-lefty*-right-->
+                    <ul class="nav navbar-nav d-flex justify-content-between mx-xl-5 text-center text-light">
+                        <!--   .navbar-nav para una navegación ligera y de altura completa 
+					   (incluida la compatibilidad con menús desplegables).-->
+                        <li class="nav-item">
                             <a class="nav-link btn-outline-primary rounded-pill px-3" href="index.html">Home</a>
-						<!-- px = padding y mx es el margin 
-						rounded-pill =genera ese boton con bordes redondeados rounded-circle-->	
+                            <!-- px = padding y mx es el margin 
+						rounded-pill =genera ese boton con bordes redondeados rounded-circle-->
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link btn-outline-primary rounded-pill px-3" href="about.html">Sobre Nosotros</a>
+                            <a class="nav-link btn-outline-primary rounded-pill px-3" href="clases.html">Clases</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link btn-outline-primary rounded-pill px-3" href="work.html">Trabajos</a>
+                            <a class="nav-link btn-outline-primary rounded-pill px-3" href="about.html">Sobre
+                                Nosotros</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link btn-outline-primary rounded-pill px-3" href="pricing.html">Precios</a>
+                            <a class="nav-link btn-outline-primary rounded-pill px-3" href="sedes.html">Sedes</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link btn-outline-primary rounded-pill px-3" href="contact.html">Contáctanos</a>
+                            <a class="nav-link btn-outline-primary rounded-pill px-3" href="contact.html">Contacto</a>
                         </li>
- 
                     </ul>
                 </div>
+
+                <!---------------------------------------------------------Fin de las opciones del menu
+------------------------------------------------------------ Inicio de los iconos del menu-->
                 <div class="navbar align-self-center d-flex">
                     <a class="nav-link" href="#"><i class='bx bx-bell bx-sm bx-tada-hover text-primary'></i></a>
-                    <a class="nav-link" href="#"><i class='bx bx-cog bx-sm text-primary'></i></a>
-                    <a class="nav-link" href="#"><i class='bx bx-user-circle bx-sm text-primary'></i></a>
+                    <a class="nav-link" href="#"><i class='bx bx-cog bx-spin-hover bx-sm text-primary'></i></a>
+                    <a class="nav-link" href="#"><i class='bx bx-user-circle  bx-sm text-primary'></i></a>
+                    <!--	https://iconify.design/icon-sets/bx/-->
                 </div>
             </div>
         </div>
     </nav>
+    <!----------------------------------------------------------- Fin de los iconos del menu -->
+
     <!-- Close Header -->
+    <!----------------------------------------------------------- Fin del Header-->
 
 
     <!-- Start Banner Hero -->
     <div id="work_banner" class="banner-wrapper bg-light w-100 py-5">
         <div class="banner-vertical-center-work container text-light d-flex justify-content-center align-items-center py-5 p-0">
             <div class="banner-content col-lg-8 col-12 m-lg-auto text-center">
-                <h1 class="banner-heading h2 display-3 pb-5 semi-bold-600 typo-space-line-center">Nuestro Trabajo</h1>
-                <h3 class="h4 pb-2 regular-400">Elit, sed do eiusmod tempor incididunt</h3>
+                <h1 class="banner-heading h2 display-3 pb-5 semi-bold-600 typo-space-line-center">Clases para una formación integral</h1>
+                <h3 class="h4 pb-2 regular-400">Porque el <b>TAO</b> lo abarca todo, vemos al ser como un TODO</h3>
                 <p class="banner-body pb-2 light-300">
-                    Vector illustration <a class="text-white" href="http://freepik.com/" target="_blank">Freepik</a>.
+                    <p>Te acompañamos paso a paso en el camino hacia un entrenamiento integral, que te permitirá ser un ser 
+                        <b>sereno</b>, <b>efectivo</b>, que se pueda defender en distintas situaciones</p>
+                    Todos juntos aprendemos a ser cada día mejores artistas marciales, mejores personas
+
+                    <!-- Vector illustration <a class="text-white" href="http://freepik.com/" target="_blank">Freepik</a>.
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                     sed do eiusmod tempor incididunt ut labore et dolore magna
                     aliqua. Quis ipsum suspendisse ultrices gravida. Risus
-                    commodo viverra maecenas accumsan lacus.
+                    commodo viverra maecenas accumsan lacus. -->
                 </p>
-               <a href="contact.html"><button type="submit" class="btn rounded-pill btn-outline-light px-4 me-4 light-300">Consultas</button></a>
-             <a href="about.html"><button type="submit" class="btn rounded-pill btn-secondary text-light px-4 light-300">Quienes Somos</button></a>
+               <a href="contact.html"><button type="submit" class="btn rounded-pill btn-outline-primary px-4 me-4 light-300">Consultas</button></a>
+             <a href="about.html"><button type="submit" class="btn rounded-pill btn-outline-primary active text-dark px-4 light-300">Quienes Somos</button></a>
             </div>
-        </div>
+       </div>
     </div>
     <!-- End Banner Hero -->
 
@@ -85,101 +135,96 @@
     <section class="container py-5">
         <div class="row justify-content-center my-5">
             <div class="filter-btns shadow-md rounded-pill text-center col-auto">
-                <a class="filter-btn btn rounded-pill btn-outline-primary border-0 m-md-2 px-md-4 active" data-filter=".project" href="#">Todos</a>
-                <a class="filter-btn btn rounded-pill btn-outline-primary border-0 m-md-2 px-md-4" data-filter=".business" href="#">Negocios</a>
-                <a class="filter-btn btn rounded-pill btn-outline-primary border-0 m-md-2 px-md-4" data-filter=".marketing" href="#">Marketing</a>
-                <a class="filter-btn btn rounded-pill btn-outline-primary border-0 m-md-2 px-md-4" data-filter=".social" href="#">Redes Sociales</a>
-                <a class="filter-btn btn rounded-pill btn-outline-primary border-0 m-md-2 px-md-4" data-filter=".graphic" href="#">Grafica</a>
+                <a class="filter-btn btn rounded-pill btn-outline-secondary  border-0 m-md-2 px-md-4 active" data-filter=".project" href="#">Todos</a>
+                <a class="filter-btn btn rounded-pill btn-outline-secondary border-0 m-md-2 px-md-4" data-filter=".formas" href="#">Formas</a>
+                <a class="filter-btn btn rounded-pill btn-outline-secondary border-0 m-md-2 px-md-4" data-filter=".defensaPersonal" href="#">Defensa Personal</a>
+                <a class="filter-btn btn rounded-pill btn-outline-secondary  border-0 m-md-2 px-md-4" data-filter=".armas" href="#">Armas</a>
+                <a class="filter-btn btn rounded-pill btn-outline-secondary  border-0 m-md-2 px-md-4" data-filter=".filosofy" href="#">Filosofía</a>
             </div>
         </div>
 
         <div class="row projects gx-lg-5">
-            <a href="#" class="col-sm-6 col-lg-4 text-decoration-none project marketing social business">
+            <a href="#" class="col-sm-6 col-lg-4 text-decoration-none project formas armas">
                 <div class="service-work overflow-hidden card mb-5 mx-5 m-sm-0">
                     <img class="card-img-top" src="./assets/img/our-work-01.jpg" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title light-300 text-dark">Marketing Digital</h5>
+                    <div class="card-body bg-card">
+                        <h5 class="card-title light-300 text-dark">Armas</h5>
                         <p class="card-text light-300 text-dark">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                            sed do eiusmod tempor incididunt ut labore et dolor.
+                            Se Practica para aplicar los principios del arte al uso de armas, empleándolas como una extensión del cuerpo.
                         </p>
-                        <span class="text-decoration-none text-primary light-300">
-                              Read more <i class='bx bxs-hand-right ms-1'></i>
+                        <span class="text-decoration-none text-secondary light-300">
+                              Saber más <i class='bx bxs-hand-right ms-1'></i>
                           </span>
                     </div>
                 </div>
             </a>
-            <a href="#" class="col-sm-6 col-lg-4 text-decoration-none project graphic social">
+            <a href="#" class="col-sm-6 col-lg-4 text-decoration-none project formas defensaPersonal">
                 <div class="service-work overflow-hidden card mx-5 mx-sm-0 mb-5">
                     <img class="card-img-top" src="./assets/img/our-work-02.jpg" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title light-300 text-dark">Branding</h5>
+                    <div class="card-body bg-card">
+                        <h5 class="card-title light-300 text-dark">Chi Sao</h5>
                         <p class="card-text light-300 text-dark">
-                            Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                            laboris nisi ut aliquip ex ea commodo consequat.
+                            Es un ejercicio para desarrollar reflejos automáticos y sensibilidad táctil al hacer contacto con el oponente.
                         </p>
-                        <span class="text-decoration-none text-primary light-300">
-                              Read more <i class='bx bxs-hand-right ms-1'></i>
+                        <span class="text-decoration-none text-secondary light-300">
+                            Saber más <i class='bx bxs-hand-right ms-1'></i>
                           </span>
                     </div>
                 </div>
             </a>
-            <a href="#" class="col-sm-6 col-lg-4 text-decoration-none project marketing graphic business">
+            <a href="#" class="col-sm-6 col-lg-4 text-decoration-none project formas defensaPersonal">
                 <div class="service-work overflow-hidden card mx-5 mx-sm-0 mb-5">
                     <img class="card-img-top" src="./assets/img/our-work-03.jpg" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title light-300 text-dark">Ventas Digitales</h5>
+                    <div class="card-body bg-card">
+                        <h5 class="card-title light-300 text-dark">Wooden Dummy</h5>
                         <p class="card-text light-300 text-dark">
-                            Duis aute irure dolor in reprehenderit in voluptate velit
-                            esse cillum dolore eu fugiatdolore eu fugiat nulla pariatur.
+                            Permite pacticar las técnicas básicas, movimientos, desplazamientos, mejorar la coordinación, fortalecer el cuerpo.
                         </p>
-                        <span class="text-decoration-none text-primary light-300">
-                              Read more <i class='bx bxs-hand-right ms-1'></i>
+                        <span class="text-decoration-none text-secondary light-300">
+                            Saber más <i class='bx bxs-hand-right ms-1'></i>
                           </span>
                     </div>
                 </div>
             </a>
-            <a href="#" class="col-sm-6 col-lg-4 text-decoration-none project social business">
+            <a href="#" class="col-sm-6 col-lg-4 text-decoration-none project formas filosofy">
                 <div class="service-work overflow-hidden card mx-5 mx-sm-0 mb-5">
                     <img class="card-img-top" src="./assets/img/our-work-04.jpg" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title light-300 text-dark">Aplicaciones</h5>
+                    <div class="card-body bg-card">
+                        <h5 class="card-title light-300 text-dark">Formas a manos vacias</h5>
                         <p class="card-text light-300 text-dark">
-                            Excepteur sint occaecat cupidatat non proident, sunt in
-                            culpa qui officia deserunt mollit anim id est laborum.
+                            Los principios de Wing Chun se pueden apreciar en las tres formas a manos vacias:  
+                            Siu Nim Tau / Cham Kiu / Biu Tze
                         </p>
-                        <span class="text-decoration-none text-primary light-300">
-                              Read more <i class='bx bxs-hand-right ms-1'></i>
+                        <span class="text-decoration-none text-secondary light-300">
+                            Saber más <i class='bx bxs-hand-right ms-1'></i>
                           </span>
                     </div>
                 </div>
             </a>
-            <a href="" class="col-sm-6 col-lg-4 text-decoration-none project marketing">
+            <a href="" class="col-sm-6 col-lg-4 text-decoration-none project defensaPersonal filosofy">
                 <div class="service-work overflow-hidden card mx-5 mx-sm-0 mb-5">
                     <img class="card-img-top" src="./assets/img/our-work-05.jpg" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title light-300 text-dark">Mercado BtoB</h5>
+                    <div class="card-body bg-card">
+                        <h5 class="card-title light-300 text-dark">Clases personalizadas</h5>
                         <p class="card-text light-300 text-dark">
-                            Excepteur sint occaecat cupidatat non proident,
-                            sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            En todas las clases se realiza un seguimiento sobre el practicante para ayudarlo a progresar de manera firme y continua
                         </p>
-                        <span class="text-decoration-none text-primary light-300">
-                              Read more <i class='bx bxs-hand-right ms-1'></i>
+                        <span class="text-decoration-none text-secondary light-300">
+                            Saber más <i class='bx bxs-hand-right ms-1'></i>
                           </span>
                     </div>
                 </div>
             </a>
-            <a href="" class="col-sm-6 col-lg-4 text-decoration-none project marketing graphic">
+            <a href="" class="col-sm-6 col-lg-4 text-decoration-none project defensaPersonal filosofy">
                 <div class="service-work overflow-hidden card mx-5 mx-sm-0 mb-5">
                     <img class="card-img-top" src="./assets/img/our-work-06.jpg" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title light-300 text-dark">Tips Financieros</h5>
+                    <div class="card-body bg-card">
+                        <h5 class="card-title light-300 text-dark">Clases a menores</h5>
                         <p class="card-text light-300 text-dark">
-                            Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                            laboris nisi ut aliquip ex ea commodo consequat.
+                            El niño/a desde temprana edad aprende a defenderse y encontrar valores que lo ayuden a lo largo de su vida.
                         </p>
-                        <span class="text-decoration-none text-primary light-300">
-                              Read more <i class='bx bxs-hand-right ms-1'></i>
+                        <span class="text-decoration-none text-secondary light-300">
+                            Saber más <i class='bx bxs-hand-right ms-1'></i>
                           </span>
                     </div>
                 </div>
@@ -243,143 +288,148 @@
     <!-- End Feature Work -->
 
 
-   <!-- Start Footer -->
-    <footer class="bg-secondary pt-4">
+ <!-- Start Footer -->
+ <footer class="bg-secondary pt-4">
+    <div class="container">
+        <div class="row py-4">
+
+            <div class="col-lg-3 col-12 align-left">
+                <a class="navbar-brand" href="index.html">
+                    <i><img src="./assets/img/favicon.ico" width="40" height="40"> </i>
+                    <span class="text-light h5">Wing Chun </span><span
+                        class="text-light h5 semi-bold-600">Tao</span>
+                </a>
+                <p class="text-light my-lg-4 my-2">
+                    Entrenamos de manera <b>integral</b>. Desde la filosofía al acondicionamiento físico. 
+                    <br>Respetando las creencias y necesidades de los practicantes, nuestra <b>familia</b>.
+                </p>
+                <ul class="list-inline footer-icons light-300">
+                    <li class="list-inline-item m-0">
+                        <a class="text-light" target="_blank" href="https://www.facebook.com/Sdsmicrocentro">
+                            <i class='bx bxl-facebook-circle bx-md'></i>
+                        </a>
+                    </li>
+                    <li class="list-inline-item m-0">
+                        <a class="text-light" target="_blank" href="https://www.instagram.com/wingchungargentina/">
+                            <i class='bx bxl-instagram bx-md'></i>
+
+                        </a>
+                    </li>
+                    <li class="list-inline-item m-0">
+                        <a class="text-light" target="_blank" href="https://www.reddit.com/r/WingChun/">
+                            <i class='bx bxl-reddit bx-md'></i>
+                        </a>
+                    </li>
+                    <li class="list-inline-item m-0">
+                        <a class="text-light" target="_blank" href="https://www.youtube.com/user/leandrocrivellari">
+                            <i class='bx bxl-youtube bx-md'></i>
+                        </a>
+                    </li>
+                    <li class="list-inline-item m-0">
+                        <a class="text-light" target="_blank" href="https://medium.com/tag/wing-chun/latest">
+                            <i class='bx bxl-medium bx-md'></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col-lg-3 col-md-4 my-sm-0 mt-4">
+                <h3 class="h4 pb-lg-3 text-light light-300">Win Chun Tao</h2>
+                    <ul class="list-unstyled text-light light-300">
+                        <li class="pb-2">
+                            <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a
+                                class="text-decoration-none text-light" href="index.html">Home</a>
+                        </li>
+                        <li class="pb-2">
+                            <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a
+                                class="text-decoration-none text-light py-1" href="about.html">Sobre Nosotros</a>
+                        </li>
+                        <li class="pb-2">
+                            <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a
+                                class="text-decoration-none text-light py-1" href="clases.html">Clases</a>
+                        </li>
+                        <li class="pb-2">
+                            <i class='bx-fw bx bxs-chevron-right bx-xs'></i></i><a
+                                class="text-decoration-none text-light py-1" href="sedes.html">Sedes</a>
+                        </li>
+                        <li class="pb-2">
+                            <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a
+                                class="text-decoration-none text-light py-1" href="contact.html">Contacto</a>
+                        </li>
+                    </ul>
+            </div>
+
+            <div class="col-lg-3 col-md-4 my-sm-0 mt-4">
+                <h2 class="h4 pb-lg-3 text-light light-300">Clases</h2>
+                <ul class="list-unstyled text-light light-300">
+                    <li class="pb-2">
+                        <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a
+                            class="text-decoration-none text-light py-1" href="#">Formas</a>
+                    </li>
+                    <li class="pb-2">
+                        <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a
+                            class="text-decoration-none text-light py-1" href="#">Defensa Personal</a>
+                    </li>
+                    <li class="pb-2">
+                        <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a
+                            class="text-decoration-none text-light py-1" href="#">Armas</a>
+                    </li>
+                    <li class="pb-2">
+                        <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a
+                            class="text-decoration-none text-light py-1" href="#">Filosofía</a>
+                    </li>
+                    <li class="pb-2">
+                        <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a
+                            class="text-decoration-none text-light py-1" href="#">Seguridad</a>
+                    </li>
+            </div>
+
+            <div class="col-lg-3 col-md-4 my-sm-0 mt-4">
+                <h2 class="h4 pb-lg-3 text-light light-300">Atendemos en:</h2>
+                <ul class="list-unstyled text-light light-300">
+                    <li class="pb-2">
+                        <i class='bx-fw bx bx-phone bx-xs'></i>
+                        <a class="text-decoration-none text-light py-1"
+                            href="tel:010-020-0340">011-2020-0009</a>
+                    </li>
+                    <li class="pb-2">
+                        <i class='bx bxl-whatsapp bx-xs text-light'></i>
+                        <a class="text-decoration-none text-light py-1"
+                            href="https://www.whatsapp.com/">54 911 56984733</a>
+                        </a>
+                        
+                    </li>
+                    <li class="pb-2">
+                        <i class='bx-fw bx bx-mail-send bx-xs'></i><a class="text-decoration-none text-light py-1"
+                            href="mailto:info@company.com">info@winchuntao.com</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="w-100 bg-custom py-3">
         <div class="container">
-            <div class="row py-4">
-
-                <div class="col-lg-3 col-12 align-left">
-                    <a class="navbar-brand" href="index.html">
-                        <i class='bx bx-buildings bx-sm text-light'></i>
-                        <span class="text-light h5">Marke-</span><span class="text-light h5 semi-bold-600">Ting</span>
-                    </a>
-                    <p class="text-light my-lg-4 my-2">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                        sed do eiusmod tempor incididunt ut.
+            <div class="row pt-2">
+                <div class="col-lg-6 col-sm-12">
+                    <p class="text-lg-start text-center text-light light-300">
+                        © Wing Chun Tao - Todos los derechos reservados.
                     </p>
-                    <ul class="list-inline footer-icons light-300">
-                        <li class="list-inline-item m-0">
-                            <a class="text-light" target="_blank" href="http://facebook.com/">
-                                <i class='bx bxl-facebook-square bx-md'></i>
-                            </a>
-                        </li>
-                        <li class="list-inline-item m-0">
-                            <a class="text-light" target="_blank" href="https://www.linkedin.com/">
-                                <i class='bx bxl-linkedin-square bx-md'></i>
-                            </a>
-                        </li>
-                        <li class="list-inline-item m-0">
-                            <a class="text-light" target="_blank" href="https://www.whatsapp.com/">
-                                <i class='bx bxl-whatsapp-square bx-md'></i>
-                            </a>
-                        </li>
-                        <li class="list-inline-item m-0">
-                            <a class="text-light" target="_blank" href="https://www.flickr.com/">
-                                <i class='bx bxl-flickr-square bx-md'></i>
-                            </a>
-                        </li>
-                        <li class="list-inline-item m-0">
-                            <a class="text-light" target="_blank" href="https://www.medium.com/">
-                                <i class='bx bxl-medium-square bx-md' ></i>
-                            </a>
-                        </li>
-                    </ul>
                 </div>
-
-                <div class="col-lg-3 col-md-4 my-sm-0 mt-4">
-                    <h3 class="h4 pb-lg-3 text-light light-300">Nuestro Estudio</h2>
-                        <ul class="list-unstyled text-light light-300">
-                            <li class="pb-2">
-                                <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light" 
-								href="index.html">Home</a>
-                            </li>
-                            <li class="pb-2">
-                                <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light py-1" 
-								href="about.html">Nosotros</a>
-                            </li>
-                            <li class="pb-2">
-                                <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light py-1" 
-								href="work.html">Trabajos</a>
-                            </li>
-                            <li class="pb-2">
-                                <i class='bx-fw bx bxs-chevron-right bx-xs'></i></i><a class="text-decoration-none text-light py-1" 
-								href="pricing.html">Precios</a>
-                            </li>
-                            <li class="pb-2">
-                                <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light py-1" 
-								href="contact.html">Contáctanos</a>
-                            </li>
-                        </ul>
-                </div>
-
-                <div class="col-lg-3 col-md-4 my-sm-0 mt-4">
-                    <h2 class="h4 pb-lg-3 text-light light-300">Trabajos</h2>
-                    <ul class="list-unstyled text-light light-300">
-                        <li class="pb-2">
-                            <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light py-1" 
-							href="#">Marcas</a>
-                        </li>
-                        <li class="pb-2">
-                            <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light py-1" 
-							href="#">Negocios</a>
-                        </li>
-                        <li class="pb-2">
-                            <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light py-1" 
-							href="#">Marketing</a>
-                        </li>
-                        <li class="pb-2">
-                            <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light py-1" 
-							href="#">Redes Sociales</a>
-                        </li>
-                        <li class="pb-2">
-                            <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light py-1" 
-							href="#">Soluciones Digitales</a>
-                        </li>
-                        <li class="pb-2">
-                            <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light py-1" 
-							href="#">Gráfica</a>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="col-lg-3 col-md-4 my-sm-0 mt-4">
-                    <h2 class="h4 pb-lg-3 text-light light-300">Atendemos en:</h2>
-                    <ul class="list-unstyled text-light light-300">
-                        <li class="pb-2">
-                            <i class='bx-fw bx bx-phone bx-xs'></i><a class="text-decoration-none text-light py-1" 
-							href="tel:010-020-0340">021-2354-4568</a>
-                        </li>
-                        <li class="pb-2">
-                            <i class='bx-fw bx bx-mail-send bx-xs'></i><a class="text-decoration-none text-light py-1"
-							href="mailto:info@company.com">info@company.com</a>
-                        </li>
-                    </ul>
-                </div>
-
-            </div>
-        </div>
-
-        <div class="w-100 bg-primary py-3">
-            <div class="container">
-                <div class="row pt-2">
-                    <div class="col-lg-6 col-sm-12">
-                        <p class="text-lg-start text-center text-light light-300">
-                            © Copyright 2021 Marke-Ting. Todos los derechos reservados.
-                        </p>
-                    </div>
-                    <div class="col-lg-6 col-sm-12">
-                        <p class="text-lg-end text-center text-light light-300">
-                            Diseñado por <a rel="sponsored" class="text-decoration-none text-light" 
-							href="https://cursophp.com.ar/" target="_blank"><strong>CAC FullStack</strong></a>
-                        </p>
-                    </div>
+                <div class="col-lg-6 col-sm-12">
+                    <p class="text-lg-end text-center text-light light-300">
+                        Diseñado por <a rel="sponsored" class="text-decoration-none text-light"
+                            href="https://cursophp.com.ar/" target="_blank"><strong>E.C. - CAC 2021
+                                #2014</strong></a>
+                    </p>
                 </div>
             </div>
         </div>
+    </div>
 
-    </footer>
-    <!-- End Footer -->
-
+</footer>
+<!-- End Footer -->
 
 
     <!-- Bootstrap -->

@@ -60,7 +60,9 @@ a {
 .bg-body {
   background: #3c150466 !important;
 }
-
+.bg-card {
+  background: #d1c3c3b7;
+}
 .text-light {
   color: #e6e6e6;
 }
@@ -68,6 +70,16 @@ a {
 .text-titulo-carrusel {
   color: #c3832b;
 }
+
+
+.text-primary {
+  color: #c5a880 !important;
+}
+
+.text-secondary {
+  color: #a8824d !important;
+}
+
 
 .btn-check:active+.btn-outline-primary,
 .btn-check:checked+.btn-outline-primary,
@@ -78,10 +90,6 @@ a {
   color: #212121;
   background-color: #c5a880;
   border-color: #c5a880;
-}
-
-.text-primary {
-  color: #c5a880 !important;
 }
 
 .typo-space-line::after,
@@ -107,10 +115,76 @@ a {
 
 /* line 65, src/assets/scss/_buttons.scss */
 .btn-outline-primary {
-  color: #e6e6e6;
-  border-color: #e6e6e6 !important;
+  color: #C2C2C2;
+  border-color: #C2C2C2 !important;
 
 }
+.btn-outline-secondary{
+  color: #0f0f0f;
+  border-color: #5e5c5c !important;
+
+}
+
+.btn-outline-secondary:hover {
+  color: #C2C2C2;
+  background-color: #5e5c5c;
+  border-color: #5e5c5c !important;
+}
+
+
+/* line 91, src/assets/scss/mixins/_buttons.scss */
+.btn-check:focus + .btn-outline-secondary, .btn-outline-secondary:focus {
+  -webkit-box-shadow: 0 0 0 0.25rem rgba(58, 57, 57, 0.5);
+          box-shadow: 0 0 0 0.25rem rgba(58, 57, 57, 0.5);
+          
+}
+
+/* line 96, src/assets/scss/mixins/_buttons.scss */
+.btn-check:checked + .btn-outline-secondary,
+.btn-check:active + .btn-outline-secondary, .btn-outline-secondary:active, .btn-outline-secondary.active, .btn-outline-secondary.dropdown-toggle.show {
+  color:#0f0f0f;
+  background-color: #5e5c5c;
+}
+
+/* line 105, src/assets/scss/mixins/_buttons.scss */
+.btn-check:checked + .btn-outline-secondary:focus,
+.btn-check:active + .btn-outline-secondary:focus, .btn-outline-secondary:active:focus, .btn-outline-secondary.active:focus, .btn-outline-secondary.dropdown-toggle.show:focus {
+  -webkit-box-shadow: 0 0 0 0.25rem rgba(58, 57, 57, 0.5);
+          box-shadow: 0 0 0 0.25rem rgba(58, 57, 57, 0.5);
+          color:#0f0f0f;
+}
+
+/* line 115, src/assets/scss/mixins/_buttons.scss */
+.btn-outline-secondary:disabled, .btn-outline-secondary.disabled {
+  color: #0f0f0f;
+  background-color: transparent;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* line 85, src/assets/scss/mixins/_buttons.scss */
 .btn-outline-primary:hover {
@@ -154,6 +228,31 @@ a {
   background-color: #c5a880;
   border-color: #c5a880 !important;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* Main Nav */
@@ -258,7 +357,7 @@ a {
 
 /* About */
 #work_banner {
-  background-image: url('./../img/banner-bg-02.jpg');
+  background-image: url('./../img/banner-bg-05.jpg');
   background-position: center center;
   background-size: cover;
   height: 100%;
@@ -303,7 +402,7 @@ a {
 /* Work */
 /* Singel Work */
 #work_single_banner {
-  background-image: url('./../img/banner-bg-02.jpg');
+  background-image: url('./../img/banner-bg-04.jpg');
   background-position: center center;
   background-size: cover;
   height: 100%;
