@@ -82,20 +82,20 @@ a {
 }
 
 .bg-plan-primary {
-  background: rgb(230,230,230);
-  background: radial-gradient(circle, rgba(230,230,230,1) 0%, rgba(225,225,224,1) 6%, rgba(211,210,207,0.9531162806919643) 21%, rgba(159,150,142,1) 89%, rgba(150,140,131,1) 100%);
+  background: rgb(230, 230, 230);
+  background: radial-gradient(circle, rgba(230, 230, 230, 1) 0%, rgba(225, 225, 224, 1) 6%, rgba(211, 210, 207, 0.9531162806919643) 21%, rgba(159, 150, 142, 1) 89%, rgba(150, 140, 131, 1) 100%);
 }
 
 .bg-plan-secondary {
   background: rgb(197, 168, 128);
-  background: radial-gradient(circle, 
-   rgba(197, 168, 128, 0.8998949921765581) 3%,
-   rgba(197, 168, 128, 0.8998949921765581) 13%, 
-   rgba(172, 146, 112, 1) 23%, 
-   rgba(117, 100, 78, 1) 63%, 
-   rgba(85, 74, 59, 1) 78%,
-   rgba(27, 25, 22, 1) 97%,
-   rgba(15, 15, 15, 1) 100%);
+  background: radial-gradient(circle,
+      rgba(197, 168, 128, 0.8998949921765581) 3%,
+      rgba(197, 168, 128, 0.8998949921765581) 13%,
+      rgba(172, 146, 112, 1) 23%,
+      rgba(117, 100, 78, 1) 63%,
+      rgba(85, 74, 59, 1) 78%,
+      rgba(27, 25, 22, 1) 97%,
+      rgba(15, 15, 15, 1) 100%);
 }
 
 
@@ -642,7 +642,7 @@ footer a.text-light:hover {
 }
 
 
-.form-label-group input::selection ~label {
+.form-label-group input::selection~label {
   padding-top: calc(var(--input-padding-y) / 3);
   padding-bottom: calc(var(--input-padding-y) / 3);
   font-size: 12px;
