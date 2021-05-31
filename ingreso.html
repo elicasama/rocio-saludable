@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<!----- definición de html 5 -->
+<html lang="es">
+<!----- definición del lenguaje -->
+<!------Inicio del  HEAD -->
+
+<head>
+    <title>Wing Chun Tao</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!----- viewport para apple device-width = ancho pantalla initial-scale es que inicia sin ningún zoom -->
+    <link rel="apple-touch-icon" href="assets/img/apple-icon.png">
+    <link rel="icon" href="./assets/img/favicon.ico" />
+    <!----- icono para apple y safari -->
+    <link rel="shortcut icon" type="image/x-icon" href="./assets/img/12.png">
+    <!-- Load Require CSS -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <!-- iconos  -->
+    <link href="assets/css/boxicon.min.css" rel="stylesheet">
+    <!--Links para el formulario--- -->
+    <link href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css'>
+    <script src='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js'></script>
+    <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+    <!------ Include the above in your HEAD tag ---------->
+
+    <!-- carga CSS -->
+    <link rel="stylesheet" href="assets/css/estilos.css">
+</head>
+<!----------------- Fin del  HEAD ------------------------------>
+
+<body class="bg-body">
+    <!-- Header 
+	nav = cuyo propósito es proporcionar enlaces de navegación, ya sea dentro del documento actual 
+	o a otros documentos
+	-->
+
+    <nav id="main_nav" class="navbar navbar-expand-lg bg-custom shadow">
+
+        <!--navbar-expand-lg = envoltorio para que el navbar se estire en lg
+	navbar-light = texto negro de la letra
+	bg-white = fondo de color blanco
+	-->
+
+        <div class="container d-flex justify-content-between align-items-center">
+
+            <a class="navbar-brand h1" href="index.html">
+                <!--navbar-brand = clase se utiliza para resaltar la marca o logotipo de su página-->
+                <!-- <i class='bx bx-buildings bx-sm text-dark' ></i> -->
+                <!--	bx bx-buildings = icono del logo de la web: 
+				http://www.unisvg.com/icon-sets/bx/bx-buildings.html 
+				https://boxicons.com/
+				-->
+                <span><img src="./assets/img/favicon.ico" width="40" height="40"> <span class="text-light h4">Wing
+                        Chun-</span><span class="text-primary h4">Tao</span></span></a>
+
+            <!--	boton de hamburguesa -->
+            <button class="navbar-toggler navbar-dark bg-custom border-0" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbar-toggler-success" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon">
+                </span>
+            </button>
+            <!------------------------------------------- Opciones del Menu		-->
+            <div class="align-self-center collapse navbar-collapse flex-fill  d-lg-flex justify-content-lg-between"
+                id="navbar-toggler-success">
+
+                <!-------collapse navbar-collapse= para agrupar y ocultar el contenido de la barra de navegación 
+		por un punto de interrupción principal.
+		flex-fill = obliga a que todos los elementos tengan el mismo tamaño de ancho
+		d-lg-flex = utilidades para crear un contenedor flexbox y transforme los elementos secundarios 
+		directos en elementos flexibles
+		-->
+                <div class="flex-fill mx-xl-5 mb-2">
+                    <!--	  mx=para clases que establecen tanto *-lefty*-right-->
+                    <ul class="nav navbar-nav d-flex justify-content-between mx-xl-5 text-center text-light">
+                        <!--   .navbar-nav para una navegación ligera y de altura completa 
+					   (incluida la compatibilidad con menús desplegables).-->
+                        <li class="nav-item">
+                            <a class="nav-link btn-outline-primary rounded-pill px-3" href="index.html">Home</a>
+                            <!-- px = padding y mx es el margin 
+						rounded-pill =genera ese boton con bordes redondeados rounded-circle-->
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn-outline-primary rounded-pill px-3" href="clases.html">Clases</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn-outline-primary rounded-pill px-3" href="about.html">Sobre
+                                Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn-outline-primary rounded-pill px-3" href="planes.html">Planes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn-outline-primary rounded-pill px-3" href="contact.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!---------------------------------------Fin de las opciones del menu --------------->
+                <!--------------------------------- Inicio de los iconos del menu--------------------->
+                <div class="navbar align-self-center d-flex">
+                    <a class="nav-link" href="#"><i class='bx bxs-calendar bx-sm bx-tada-hover text-primary'></i></a>
+                    <a class="nav-link" href="#"><i class='bx bxs-face-mask bx-sm text-primary'></i></a>
+                    <!--	https://iconify.design/icon-sets/bx/-->
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!------------------------------- Fin de los iconos del menu -------------------------->
+
+    <!------------------------- Close Header  -------------------------->
+    <!------------- Fin del Header-------------------------------------->
+
+
+    <!-- Start Banner Hero -->
+    <section class="bg-light">
+        <div class="container  bg-light py-4 md-12">
+            <!-- contenedor de los dos formulario -->
+            <div class="row justify-content-between ">
+
+                <!-- Inicio de la CARD de login-->
+                <div class="card card-signin bg-light col-lg-5 col-md-4 ">
+                    <div class="card-body">
+                        <h3 class="card-title text-center text-dark">Ingreso</h3>
+                        <form class="form-signin">
+                            <div>
+                                <div class="form-floating py-2">
+                                    <input type="text" class="form-control form-control-lg light-300" id="floatinguser"
+                                        name="user" placeholder="Usuario" required>
+                                    <label for="floatinguser light-300">Usuario</label>
+                                </div>
+
+                                <div class="form-floating py-2 ">
+                                    <input type="password" class="form-control form-control-lg light-300"
+                                        id="inputPassword" name="user" placeholder="Clave" required>
+                                    <label for="inputPassword light-300">Clave</label>
+                                </div>
+
+
+                            </div>
+
+                            <div class="custom-control custom-checkbox mb-2">
+                                <input type="checkbox" class="form-check-input" id="customCheck1">
+                                <label class="custom-control-label" for="customCheck1">Recodar usuario</label>
+                            </div>
+                            <div class="d-flex justify-content-center">
+                                <button type="submit"
+                                    class="btn btn-secondary rounded-pill px-md-5 px-4 py-2 radius-0 text-light light-300">Ingresar</button>
+                            </div>
+                            <hr class="my-4">
+                            <p class="text-dark text-center py-2">También podés ingresar con:</p>
+                            <div class="d-flex justify-content-around ">
+                                <a href="http://gmail.com" class="btn btn-lg btn-google btn-block text-uppercase"
+                                    type="submit"><i class="fab fa-google mr-2"></i>Google</a>
+                                <a href="http://facebook.com" class="btn btn-lg btn-facebook btn-block text-uppercase"
+                                    type="submit"><i class="fab fa-facebook-f mr-2"></i>Facebook</a>
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+
+                <!-- Inicio de la CARD registración----------->
+                <div class="card card-signin bg-light  col-lg-5 col-md-4 ">
+                    <div class="card-body">
+                        <!-- <div class="container  my-4 p-4 badge-light bg-custom col-md-6"> -->
+                        <h3 class="card-title text-center text-dark">Registración</h3>
+
+                        <form class="form-row ">
+                            <div class=" col-md-12">
+                                <label for="inputTextUsuario">Usuario</label>
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text" id="basic-addon1">@</span>
+                                    </div>
+                                    <input type="text" class="form-control" placeholder="Usuario" aria-label="Usuario"
+                                        aria-describedby="basic-addon1" required />
+                                </div>
+                            </div>
+                            <div class="form-row d-flex justify-content-between ">
+                                <div class=" col-md-5">
+                                    <label for="inputClave">Clave</label>
+                                    <input type="password" class="form-control" id="inputClave"
+                                        placeholder="De 8 a 10 caracteres" required />
+                                </div>
+
+                                <div class=" col-md-5">
+                                    <label for="inputClave">Clave</label>
+                                    <input type="password" class="form-control" id="inputClave" placeholder="Repetir"
+                                        required />
+                                </div>
+                            </div>
+
+
+                            <div class="form-row d-flex justify-content-between ">
+                                <div class="col-md-5">
+                                    <label for="inputTextNombre">Nombre</label>
+                                    <input type="text" class="form-control" id="inputTextNombre" required />
+                                </div>
+                                <div class=" col-md-5">
+                                    <label for="inputTextApellido">Apellido</label>
+                                    <input type="text" class="form-control" id="inputTextApellido" required />
+                                </div>
+                            </div>
+
+
+                            <div class=" ">
+                                <label for="inputEmail">Mail</label>
+                                <input type="email" class="form-control" id="inputEmail"
+                                    placeholder="you@example.com" required />
+                            </div>
+
+                            <div class="form-row d-flex justify-content-between ">
+                                <div class="col-md-5">
+                                    <label for="inputTelefono">Telefono</label>
+                                    <input type="text" class="form-control" id="inputTelefono"
+                                        placeholder="cod país + área" />
+                                </div>
+
+                                <div class="col-md-5">
+                                    <label for="inputPais">País</label>
+                                    <select id="inputPais" class="form-control">
+                                        <option selected>Escoger...</option>
+                                        <option>Argentina</option>
+                                        <option>China</option>
+                                        <option>Japón</option>
+                                        <option>Tailandia</option>
+                                        <option>Otro</option>
+                                    </select>
+                                </div>
+
+                            </div>
+                            <hr>
+
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" required>
+                                <label class="form-check-label" for="defaultCheck1">
+                                    Aceptar terminos y condiciones
+                                </label>
+                            </div>
+                            <div class="d-flex justify-content-around py-2">
+                                <span>
+                                    <button type="reset"
+                                        class="btn btn-secondary rounded-pill px-md-5 px- py-2 radius-0 text-light light-300">
+                                        Limpiar </button>
+                                    <button type="submit"
+                                        class="btn btn-secondary rounded-pill px-md-5 px-4 py-2 radius-0 text-light light-300">Registrarse</button>
+                                </span>
+                            </div>
+
+
+                            </form>
+
+                        </div>
+                    </div>
+
+                </div> <!-- Fin de contenedor de los dos formulario -->
+            </div> <!-- Cierra el contenedor-->
+        </div>
+
+    </section>
+    <!-- End Banner Hero -->
+
+
+    <!------------- Fin del usuario-------------------------------------->
+    <!-- Start Footer -->
+    <footer class="bg-secondary pt-4">
+        <div class="container">
+            <div class="row py-4">
+
+                <div class="col-lg-3 col-12 align-left">
+                    <a class="navbar-brand" href="index.html">
+                        <i><img src="./assets/img/favicon.ico" width="40" height="40"> </i>
+                        <span class="text-light h5">Wing Chun </span><span
+                            class="text-light h5 semi-bold-600">Tao</span>
+                    </a>
+                    <p class="text-light my-lg-4 my-2">
+                        Entrenamos de manera <b>integral</b>. Desde la filosofía al acondicionamiento físico.
+                        <br>Respetando las creencias y necesidades de los practicantes, nuestra <b>familia</b>.
+                    </p>
+                    <ul class="list-inline footer-icons light-300">
+                        <li class="list-inline-item m-0">
+                            <a class="text-light" target="_blank" href="https://www.facebook.com/Sdsmicrocentro">
+                                <i class='bx bxl-facebook-circle bx-md'></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item m-0">
+                            <a class="text-light" target="_blank" href="https://www.instagram.com/wingchungargentina/">
+                                <i class='bx bxl-instagram bx-md'></i>
+
+                            </a>
+                        </li>
+                        <li class="list-inline-item m-0">
+                            <a class="text-light" target="_blank" href="https://www.reddit.com/r/WingChun/">
+                                <i class='bx bxl-reddit bx-md'></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item m-0">
+                            <a class="text-light" target="_blank" href="https://www.youtube.com/user/leandrocrivellari">
+                                <i class='bx bxl-youtube bx-md'></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item m-0">
+                            <a class="text-light" target="_blank" href="https://medium.com/tag/wing-chun/latest">
+                                <i class='bx bxl-medium bx-md'></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-4 my-sm-0 mt-4">
+                    <h3 class="h4 pb-lg-3 text-light light-300">Win Chun Tao</h2>
+                        <ul class="list-unstyled text-light light-300">
+                            <li class="pb-2">
+                                <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a
+                                    class="text-decoration-none text-light" href="index.html">Home</a>
+                            </li>
+                            <li class="pb-2">
+                                <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a
+                                    class="text-decoration-none text-light py-1" href="about.html">Sobre Nosotros</a>
+                            </li>
+                            <li class="pb-2">
+                                <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a
+                                    class="text-decoration-none text-light py-1" href="clases.html">Clases</a>
+                            </li>
+                            <li class="pb-2">
+                                <i class='bx-fw bx bxs-chevron-right bx-xs'></i></i><a
+                                    class="text-decoration-none text-light py-1" href="planes.html">Planes</a>
+                            </li>
+                            <li class="pb-2">
+                                <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a
+                                    class="text-decoration-none text-light py-1" href="contact.html">Contacto</a>
+                            </li>
+                        </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-4 my-sm-0 mt-4">
+                    <h2 class="h4 pb-lg-3 text-light light-300">Clases</h2>
+                    <ul class="list-unstyled text-light light-300">
+                        <li class="pb-2">
+                            <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a
+                                class="text-decoration-none text-light py-1" href="clases.html">Formas</a>
+                        </li>
+                        <li class="pb-2">
+                            <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a
+                                class="text-decoration-none text-light py-1" href="clases.html">Defensa Personal</a>
+                        </li>
+                        <li class="pb-2">
+                            <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a
+                                class="text-decoration-none text-light py-1" href="clases.html">Armas</a>
+                        </li>
+                        <li class="pb-2">
+                            <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a
+                                class="text-decoration-none text-light py-1" href="clases.html">Filosofía</a>
+                        </li>
+                        <li class="pb-2">
+                            <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a
+                                class="text-decoration-none text-light py-1" href="clases.html">Seguridad</a>
+                        </li>
+                </div>
+
+                <div class="col-lg-3 col-md-4 my-sm-0 mt-4">
+                    <h2 class="h4 pb-lg-3 text-light light-300">Atendemos en:</h2>
+                    <ul class="list-unstyled text-light light-300">
+                        <li class="pb-2">
+                            <i class='bx-fw bx bx-phone bx-xs'></i>
+                            <a class="text-decoration-none text-light py-1" href="tel:010-020-0340">011-2020-0009</a>
+                        </li>
+                        <li class="pb-2">
+                            <i class='bx bxl-whatsapp bx-xs text-light'></i>
+                            <a class="text-decoration-none text-light py-1" href="https://www.whatsapp.com/">54 911
+                                56984733</a>
+                            </a>
+
+                        </li>
+                        <li class="pb-2">
+                            <i class='bx-fw bx bx-mail-send bx-xs'></i><a class="text-decoration-none text-light py-1"
+                                href="mailto:info@company.com">info@winchuntao.com</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="w-100 bg-custom py-3">
+            <div class="container">
+                <div class="row pt-2">
+                    <div class="col-lg-6 col-sm-12">
+                        <p class="text-lg-start text-center text-light light-300">
+                            © Wing Chun Tao - Todos los derechos reservados.
+                        </p>
+                    </div>
+                    <div class="col-lg-6 col-sm-12">
+                        <p class="text-lg-end text-center text-light light-300">
+                            Diseñado por <a rel="sponsored" class="text-decoration-none text-light"
+                                href="https://cursophp.com.ar/" target="_blank"><strong>E.C. - CAC 2021
+                                    #2014</strong></a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+    <!-- End Footer -->
+
+
+    <!-- Bootstrap -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <!-- Load jQuery require for isotope -->
+    <script src="assets/js/jquery.min.js"></script>
+    <!-- Isotope -->
+    <script src="assets/js/isotope.pkgd.js"></script>
+    <!-- Page Script -->
+    <script>
+        $(window).load(function () {
+            // init Isotope
+            var $projects = $('.projects').isotope({
+                itemSelector: '.project',
+                layoutMode: 'fitRows'
+            });
+            $(".filter-btn").click(function () {
+                var data_filter = $(this).attr("data-filter");
+                $projects.isotope({
+                    filter: data_filter
+                });
+                $(".filter-btn").removeClass("active");
+                $(".filter-btn").removeClass("shadow");
+                $(this).addClass("active");
+                $(this).addClass("shadow");
+                return false;
+            });
+        });
+    </script>
+
+
+</body>
+
+</html>
