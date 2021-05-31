@@ -48,6 +48,18 @@ a {
 }
 
 /* Colors      */
+/*
+.text-primary  		azul  //#c5a880
+.text-secondary		gris // text-titulo-carrusel	
+.text-success		verde
+.text-danger		rojo
+.text-warning		amarillo
+.text-info			celeste 
+.text-light			blanco // e6e6e6
+.text-dark			negro  // custom #0f0f0f
+.text-muted			gris oscuro  //#DBBB8F??
+.text-white			gris claro
+*/
 
 .bg-custom {
   background: #0f0f0f;
