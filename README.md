@@ -7,13 +7,13 @@ Puedes ver el sitio ingresando a [Wing Chun Tao](https://elicasama.github.io/win
 
 El sitio web corresponde al trabajo integrador del curso **Codo a Codo 2021 - Comisión #2014**
 
-En el mismo se tomó un template de boostrap básico y se procedió a modificar las secciones, imágenes y efectos.
+En el mismo se tomó un template de bootstrap básico y se procedió a modificar las secciones, imágenes y efectos.
 
 ## Desafíos
 
-En el proceso aprendí
+En el proceso aprendí:
 
-- Modificaciones de templates en boostrap
+- Modificaciones de templates en bootstrap
 - Armado de formularios
 - Diseño responsive
 
